@@ -1,8 +1,9 @@
-import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+
+const superSacolas1 = '/images/super-sacolas-1.jpeg';
+const superSacolas2 = '/images/super-sacolas-2.jpeg';
 
 const Cases = () => {
   return (
@@ -56,7 +57,7 @@ const Cases = () => {
               </div>
               
               <div className="flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-4">"Minha Palavra"</h3>
+                <h3 className="text-2xl font-bold mb-4">Minha Palavra</h3>
                 <p className="text-lg mb-6">
                   A maneira mais fácil e rápida de gerar contratos personalizados: envie sua solicitação pelo WhatsApp e receba um documento feito sob medida para você!
                 </p>
@@ -67,17 +68,13 @@ const Cases = () => {
                   </p>
                   <p className="font-medium">Hércules, CEO no Minha Palavra.</p>
                 </div>
-                
-                <div className="mt-6">
-                  <Button variant="outline">Ver mais</Button>
-                </div>
               </div>
             </div>
             
             {/* Second Case */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="flex flex-col justify-center order-2 md:order-1">
-                <h3 className="text-2xl font-bold mb-4">"Gabriel da Super Sacolas"</h3>
+                <h3 className="text-2xl font-bold mb-4">Gabriel da Super Sacolas</h3>
                 <p className="text-lg mb-6">
                   Atendente digital que apresenta produtos com imagens e vídeos, filtrando apenas leads qualificados para o atendimento humano. Proporciona mais agilidade e aumento nas conversões, otimizando investimentos em tráfego pago ao focar em clientes com real interesse de compra.
                 </p>
@@ -88,24 +85,20 @@ const Cases = () => {
                   </p>
                   <p className="font-medium">Nome do Cliente, Cargo na Empresa</p>
                 </div>
-                
-                <div className="mt-6">
-                  <Button variant="outline">Ver mais</Button>
-                </div>
               </div>
               
               <div className="order-1 md:order-2">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
                     <img 
-                      src="https://placehold.co/600x400/e2e8f0/1e293b?text=Screenshot+1" 
+                      src={superSacolas1} 
                       alt="Screenshot 1" 
                       className="w-full h-auto"
                     />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
                     <img 
-                      src="https://placehold.co/600x400/e2e8f0/1e293b?text=Screenshot+2" 
+                      src={superSacolas2} 
                       alt="Screenshot 2" 
                       className="w-full h-auto"
                     />
@@ -125,7 +118,7 @@ const Cases = () => {
             <p className="mb-8 text-white/80">
               Entre em contato hoje mesmo e comece a transformar seu negócio com nossas soluções tecnológicas.
             </p>
-            <Button size="lg" variant="secondary" className="text-accent font-medium">
+            <Button size="lg" variant="secondary" className="text-accent font-medium" onClick={() => window.open('https://wa.me/5511948582930', '_blank')}>
               Solicitar orçamento
             </Button>
           </div>

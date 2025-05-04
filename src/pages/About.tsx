@@ -1,8 +1,13 @@
-import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+
+const PedroImage = '/images/pedro.jpg';
+const DanielImage = '/images/daniel.jpeg';
+const GabrielImage = '/images/gabriel.jpg';
+const MatheusImage = '/images/matheus.jpeg';
+const LauraImage = '/images/laura.jpeg';
 
 const About = () => {
   return (
@@ -70,37 +75,82 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-primary/10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-primary/30"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Daniel Jacob</h3>
-                <p className="text-sm text-primary font-medium mb-2">SOFTWARE ENGINEER</p>
-                <p className="text-muted-foreground text-sm">MATEMÁTICA APLICADA - FGV</p>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
             
-            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
               <div className="aspect-square bg-primary/10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-primary/30"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <img src={PedroImage} alt="Pedro Cleto" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-1">Pedro Cleto</h3>
-                <p className="text-sm text-primary font-medium mb-2">SOFTWARE ENGINEER</p>
-                <p className="text-muted-foreground text-sm">MATEMÁTICA - UFMG</p>
+                <p className="text-sm text-primary font-medium mb-3">ENGENHEIRO DE SOFTWARE</p>
+                <p className="text-muted-foreground text-sm mb-4">MATEMÁTICA - UFMG</p>
+                <p className="text-sm leading-relaxed">
+                  Fundador da Vellune e engenheiro de Software sênior com 7 anos de experiência em empresas como banco Inter e DEEP ESG.
+                  Medalhista internacional de matemática. Membro mais generalista da Vellune.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <div className="aspect-square bg-primary/10 flex items-center justify-center">
+                <img src={GabrielImage} alt="Gabriel Ferreira" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Gabriel Ferreira</h3>
+                <p className="text-sm text-primary font-medium mb-3">ENGENHEIRO DE SOFTWARE</p>
+                <p className="text-muted-foreground text-sm mb-4">MATEMÁTICA - UFMG</p>
+                <p className="text-sm leading-relaxed">
+                  Tem 5 anos com experiência com engenharia de software, foi Tech Lead na PUAH. 
+                  Especialista em desenvolvimento web e gestão de equipes.
+                </p>
               </div>
             </div>
             
             <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
               <div className="aspect-square bg-primary/10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-primary/30"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <img src={DanielImage} alt="Daniel Jacob" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Gabriel Ferreira</h3>
-                <p className="text-sm text-primary font-medium mb-2">SOFTWARE ENGINEER</p>
-                <p className="text-muted-foreground text-sm">MATEMÁTICA - UFMG</p>
+                <h3 className="text-xl font-bold mb-1">Daniel Jacob</h3>
+                <p className="text-sm text-primary font-medium mb-3">ENGENHEIRO DE SOFTWARE</p>
+                <p className="text-muted-foreground text-sm mb-4">MATEMÁTICA APLICADA - FGV</p>
+                <p className="text-sm leading-relaxed">
+                  Bolsista por mérito na FGV e medalhista na OBMEP. Combina rigor matemático 
+                  e conhecimento técnico para desenvolver soluções fora da caixa, incluindo 
+                  aplicações de modelos LLM para automação de processos.
+                </p>
+              </div>
+            </div>
+          
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <div className="aspect-square bg-primary/10 flex items-center justify-center">
+                <img src={MatheusImage} alt="Matheus Vinicius" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Matheus Vinicius</h3>
+                <p className="text-sm text-primary font-medium mb-3">MARKETING / COMERCIAL</p>
+                <p className="text-muted-foreground text-sm mb-4">GESTÃO COMERCIAL - UNISOCIESC</p>
+                <p className="text-sm leading-relaxed">
+                  Responsável pela área comercial e marketing da Vellune. Conecta nossas soluções 
+                  tecnológicas às necessidades do mercado e traduz os desafios dos clientes em 
+                  oportunidades de negócio.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+              <div className="aspect-square bg-primary/10 flex items-center justify-center">
+                <img src={LauraImage} alt="Laura Giovanini" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-1">Laura Giovanini</h3>
+                <p className="text-sm text-primary font-medium mb-3">DESIGNER</p>
+                <p className="text-muted-foreground text-sm mb-4">DESIGN DE INTERIORES - EBAC</p>
+                <p className="text-sm leading-relaxed">
+                  Experiente designer responsável pela estética e usabilidade dos produtos criados pela Vellune.
+                  Traz uma visão diferenciada para a criação de interfaces intuitivas e esteticamente harmoniosas.
+                </p>
               </div>
             </div>
           </div>
@@ -115,7 +165,11 @@ const About = () => {
             <p className="mb-8 text-muted-foreground">
               Começe sua jornada agora e experiencie o futuro da tecnologia.
             </p>
-            <Button size="lg" className="text-base">
+            <Button 
+              size="lg" 
+              className="text-base"
+              onClick={() => window.open('https://wa.me/5511948582930', '_blank')}
+            >
               Eleve seu negócio hoje
             </Button>
           </div>
