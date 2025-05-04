@@ -15,7 +15,7 @@ export default function Navbar() {
           <a href="/" className="text-foreground/90 hover:text-foreground transition-colors">Home</a>
           <a href="/about" className="text-foreground/90 hover:text-foreground transition-colors">Sobre</a>
           <a href="/cases" className="text-foreground/90 hover:text-foreground transition-colors">Cases</a>
-          <Button variant="default" onClick={() => window.open('mailto:contato@vellune.tech')}>
+          <Button variant="default" onClick={() => window.open('https://wa.me/5511948582930', '_blank')}>
             Fale Conosco
           </Button>
         </div>

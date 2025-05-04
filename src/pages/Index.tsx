@@ -21,7 +21,7 @@ const Index = () => {
                 Entregando software de qualidade lunar em alta velocidade
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center fade-in delay-200">
-                <Button size="lg" className="text-base">
+                <Button size="lg" className="text-base" onClick={() => window.open('https://wa.me/5511948582930', '_blank')}>
                   Solicitar orçamento
                 </Button>
                 <Button size="lg" variant="outline" className="text-base" onClick={() => window.location.href = '/about'}>
@@ -125,7 +125,7 @@ const Index = () => {
             <p className="mb-8 text-white/80">
               Entre em contato hoje mesmo e descubra como podemos ajudar sua empresa a crescer com soluções tecnológicas de ponta.
             </p>
-            <Button size="lg" variant="secondary" className="text-accent font-medium">
+            <Button size="lg" variant="secondary" className="text-accent font-medium" onClick={() => window.open('https://wa.me/5511948582930', '_blank')}> 
               Solicitar orçamento
             </Button>
           </div>
