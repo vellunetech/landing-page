@@ -42,14 +42,14 @@ const Cases = () => {
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
                     <img 
                       src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31bdba762f3f3ad8556e3_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2014.46.39_d4f03553.jpg" 
-                      alt="Minha Palavra App" 
+                      alt="Screenshot 1" 
                       className="w-full h-auto"
                     />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
                     <img 
                       src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31e292f83be437aed22d1_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2015.04.08_9af44b00.jpg" 
-                      alt="Project Dashboard" 
+                      alt="Screenshot 2" 
                       className="w-full h-auto"
                     />
                   </div>
@@ -79,12 +79,14 @@ const Cases = () => {
                   Atendente digital que apresenta produtos com imagens e vídeos, filtrando apenas leads qualificados para o atendimento humano. Proporciona mais agilidade e aumento nas conversões, otimizando investimentos em tráfego pago ao focar em clientes com real interesse de compra.
                 </p>
                 
+                {/* Testimonial hidden for now
                 <div className="bg-secondary p-6 rounded-lg mb-6">
                   <p className="italic text-muted-foreground mb-4">
                     "Depoimento do cliente sobre o projeto. Destaque como a solução impactou positivamente o negócio e por que recomendariam seus serviços para outros."
                   </p>
                   <p className="font-medium">Nome do Cliente, Cargo na Empresa</p>
                 </div>
+                */}
               </div>
               
               <div className="order-1 md:order-2">
@@ -118,7 +120,7 @@ const Cases = () => {
             <p className="mb-8 text-white/80">
               Entre em contato hoje mesmo e comece a transformar seu negócio com nossas soluções tecnológicas.
             </p>
-            <Button size="lg" variant="secondary" className="text-accent font-medium" onClick={() => window.open('https://wa.me/5511948582930', '_blank')}>
+            <Button size="lg" variant="secondary" className="text-accent font-medium" onClick={() => window.open('https://wa.me/551148582930', '_blank')}>
               Solicitar orçamento
             </Button>
           </div>
