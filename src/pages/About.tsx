@@ -168,7 +168,7 @@ const About = () => {
             <Button 
               size="lg" 
               className="text-base"
-              onClick={() => window.open('https://wa.me/5511948582930', '_blank')}
+              onClick={() => window.open('https://wa.me/551148582930', '_blank')}
             >
               Eleve seu negócio hoje
             </Button>
