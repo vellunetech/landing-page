@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Cases from "./pages/Cases";
+import Index_conversao from "./pages/conversao-de-lead/Index";
+import Contact_conversao from "./pages/conversao-de-lead/Contact";
 import NotFound from "./pages/NotFound";
 
 // Add Google Fonts
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/cases" element={<Cases />} />
+          <Route path="/conversao-de-lead" element={<Index_conversao />} />
+          <Route path="/conversao-de-lead/contact" element={<Contact_conversao />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
