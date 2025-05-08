@@ -1,9 +1,36 @@
 import { Button } from '@/components/ui/button';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const superSacolas1 = '/images/super-sacolas-1.jpeg';
 const superSacolas2 = '/images/super-sacolas-2.jpeg';
+const tiagoImage = '/images/tiago.jpg';
+const herculesImage = '/images/hercules.jpeg';
+
+const Testimonial = ({ index, name, role, image, quote }: { index: number, name: string, role: string, image: string, quote: string }) => (
+  <Card key={index} className="bg-secondary border-0 shadow-md hover:shadow-lg transition-shadow">
+    <CardContent className="pt-6">
+      <div className="mb-4">
+        {[...Array(5)].map((_, i) => (
+          <span key={i} className="text-yellow-400">★</span>
+        ))}
+      </div>
+      <p className="mb-6 italic text-gray-600">{quote}</p>
+      <div className="flex items-center">
+        <Avatar className="h-10 w-10 mr-3">
+          <AvatarImage src={image} />
+          <AvatarFallback className="bg-brand-100 text-brand-800">{image}</AvatarFallback>
+        </Avatar>
+        <div>
+          <div className="font-semibold">{name}</div>
+          <div className="text-sm text-gray-500">{role}</div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+)
 
 const Cases = () => {
   return (
@@ -62,12 +89,13 @@ const Cases = () => {
                   A maneira mais fácil e rápida de gerar contratos personalizados: envie sua solicitação pelo WhatsApp e receba um documento feito sob medida para você!
                 </p>
                 
-                <div className="bg-secondary p-6 rounded-lg mb-6">
-                  <p className="italic text-muted-foreground mb-4">
-                    "O Pedro (Engenheiro da Vellune) não só prestou um excelente serviço, entregando todo o combinado no prazo como em todas as reuniões demonstrou muita proatividade, trazendo ideias e novas soluções."
-                  </p>
-                  <p className="font-medium">Hércules, CEO no Minha Palavra.</p>
-                </div>
+                <Testimonial 
+                  index={0} 
+                  name="Hércules Florence" 
+                  role="CEO no Minha Palavra" 
+                  image={herculesImage} 
+                  quote="O Pedro (Engenheiro da Vellune) não só prestou um excelente serviço, entregando todo o combinado no prazo como em todas as reuniões demonstrou muita proatividade, trazendo ideias e novas soluções."
+                />
               </div>
             </div>
             
@@ -79,14 +107,13 @@ const Cases = () => {
                   Atendente digital que apresenta produtos com imagens e vídeos, filtrando apenas leads qualificados para o atendimento humano. Proporciona mais agilidade e aumento nas conversões, otimizando investimentos em tráfego pago ao focar em clientes com real interesse de compra.
                 </p>
                 
-                {/* Testimonial hidden for now
-                <div className="bg-secondary p-6 rounded-lg mb-6">
-                  <p className="italic text-muted-foreground mb-4">
-                    "Depoimento do cliente sobre o projeto. Destaque como a solução impactou positivamente o negócio e por que recomendariam seus serviços para outros."
-                  </p>
-                  <p className="font-medium">Nome do Cliente, Cargo na Empresa</p>
-                </div>
-                */}
+                <Testimonial 
+                  index={1} 
+                  name="Tiago Alves" 
+                  role="CEO da Super Sacolas" 
+                  image={tiagoImage} 
+                  quote="Olá, gostaria de agradecer ao Pedro e a Vellune pelo excelente trabalho prestado com o chatbot de atendimento. Facilitou muito minha vida economizado muito na minha empresa e no meu tempo do dia a dia. Vellune, vocês são show!!!"
+                />
               </div>
               
               <div className="order-1 md:order-2">
