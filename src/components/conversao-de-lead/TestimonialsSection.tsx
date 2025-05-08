@@ -33,10 +33,10 @@ const TestimonialsSection: React.FC = () => {
             O que nossos clientes <span className="text-brand-600">dizem</span>
           </h2>
           <p className="text-lg text-gray-600">
-            Empresas de todos os tamanhos estão aumentando suas conversões com a plataforma Vellune
+            Empresas de todos os tamanhos estão aumentando suas conversões com os chatbots Vellune
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-white border-0 shadow-md hover:shadow-lg transition-shadow">
@@ -61,22 +61,7 @@ const TestimonialsSection: React.FC = () => {
             </Card>
           ))}
         </div>
-        
-        <div className="mt-16">
-          <div className="p-8 bg-white rounded-xl shadow-md">
-            <div className="flex flex-col md:flex-row items-center justify-between">
-              <div className="mb-6 md:mb-0 md:mr-6">
-                <h3 className="text-2xl font-semibold mb-2">Pronto para aumentar suas conversões?</h3>
-                <p className="text-gray-600">Junte-se às milhares de empresas que já transformaram seu funil de vendas com o Vellune.</p>
-              </div>
-              <a href="#cta">
-                <button className="bg-brand-600 hover:bg-brand-700 text-white font-medium px-6 py-3 rounded-lg transition-colors">
-                  Comece sua avaliação gratuita
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

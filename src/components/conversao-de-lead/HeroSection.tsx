@@ -19,18 +19,18 @@ const HeroSection: React.FC = () => {
       });
       return;
     }
-    
+
     // Format the phone number for WhatsApp link
     const formattedNumber = phoneNumber.replace(/\D/g, '');
     // Here would go the lead capture logic
     // Redirect to WhatsApp
     window.open(`https://wa.me/55${formattedNumber}?text=Olá! Estou interessado em saber mais sobre a solução de chatbot da Vellune.`, '_blank');
-    
+
     toast({
       title: "Redirecionando para WhatsApp!",
       description: "Vamos continuar a conversa por lá.",
     });
-    
+
     setPhoneNumber('');
   };
 
@@ -42,12 +42,12 @@ const HeroSection: React.FC = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="text-green-600">Converta visitantes</span> em leads via WhatsApp
             </h1>
-            
+
             <p className="text-lg md:text-xl text-gray-600">
-              A Vellune transforma seu tráfego web em oportunidades reais de negócio com chatbots inteligentes para WhatsApp. 
+              A Vellune transforma seu tráfego web em oportunidades reais de negócio com chatbots inteligentes para WhatsApp.
               Capture, qualifique e converta mais leads com atendimento automatizado 24/7.
             </p>
-            
+
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md">
               <Input
                 type="tel"
@@ -61,12 +61,14 @@ const HeroSection: React.FC = () => {
                 Falar Agora
               </Button>
             </form>
-            
+
             <div className="text-sm text-gray-500">
-              <p>Mais de 2.000 empresas já utilizam chatbots Vellune no WhatsApp ✓</p>
+              <p>O Brasil já conta com mais de 671 mil bots em atividade ✓</p>
+              <p> Pesquisa Panorama Mobile Time -
+                Mapa do Ecossistema Brasileiro de Bots - Agosto de 2023. </p>
             </div>
           </div>
-          
+
           <div className="relative animate-bounce-in">
             <div className="relative z-10">
               <img
@@ -79,7 +81,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

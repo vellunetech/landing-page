@@ -24,15 +24,13 @@ const Navbar: React.FC = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <a href="#contact" className="hidden md:block">
+          <a href="#cta" className="hidden md:block">
             <Button variant="outline" size="sm">Contato</Button>
           </a>
-          <a href="#cta">
-            <Button size="sm" className="bg-green-600 hover:bg-green-700">
-              <MessageCircle className="mr-2 h-4 w-4" />
-              WhatsApp
-            </Button>
-          </a>
+          <Button size="sm" className="bg-green-600 hover:bg-green-700" onClick={() => window.open('https://wa.me/551148582930', '_blank')}>
+            <MessageCircle className="mr-2 h-4 w-4" />
+            WhatsApp
+          </Button>
         </div>
       </div>
     </header>

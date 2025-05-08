@@ -29,14 +29,14 @@ const FeaturesSection: React.FC = () => {
             Tudo que você precisa para <span className="text-green-600">converter no WhatsApp</span>
           </h2>
           <p className="text-lg text-gray-600">
-            Nossa plataforma foi desenvolvida para maximizar suas conversões através de chatbots inteligentes para WhatsApp.
+            Nossas plataformas customizadas são desenvolvidas para maximizar suas conversões através de chatbots inteligentes para WhatsApp.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white p-8 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="mb-5 inline-block p-3 bg-green-50 rounded-lg">
@@ -51,15 +51,16 @@ const FeaturesSection: React.FC = () => {
         <div className="mt-16 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold">
-              Aumente sua taxa de conversão em até <span className="text-green-600">300%</span> com WhatsApp
+              Aumente sua taxa de conversão em até <span className="text-green-600">2000%</span> com WhatsApp
             </h3>
             <p className="text-lg text-gray-600">
-              Nosso chatbot para WhatsApp utiliza inteligência artificial para engajar visitantes e transformá-los em clientes qualificados através do canal que eles já usam diariamente.
+              Estudo da InsideSales.com revela que a taxa de conversão é 21 vezes maior quando você faz o contato em até 5 minutos. Nosso chatbot para WhatsApp utiliza inteligência artificial para engajar visitantes e transformá-los em clientes qualificados através do canal que eles já usam diariamente.
             </p>
-            
+
             <ul className="space-y-3">
               {[
-                "Respostas automáticas 24/7 que parecem humanas",
+                "Respostas automáticas extremamente naturais",
+                "Bot em atividade 24/7, sem pausas",
                 "Qualificação de leads com perguntas estratégicas",
                 "Transferência suave para atendentes humanos quando necessário",
                 "Integração com seu CRM e ferramentas de marketing"
@@ -73,14 +74,23 @@ const FeaturesSection: React.FC = () => {
               ))}
             </ul>
           </div>
-          
           <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1607970669494-180ee3fb589b?q=80&w=2426&auto=format&fit=crop"
-              alt="Interface do chatbot WhatsApp"
-              className="rounded-lg shadow-md"
-            />
-            <div className="absolute -bottom-4 -right-4 w-full h-full bg-green-500/20 rounded-lg -z-10"></div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
+                <img
+                  src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31bdba762f3f3ad8556e3_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2014.46.39_d4f03553.jpg"
+                  alt="Screenshot 1"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
+                <img
+                  src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31e292f83be437aed22d1_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2015.04.08_9af44b00.jpg"
+                  alt="Screenshot 2"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
