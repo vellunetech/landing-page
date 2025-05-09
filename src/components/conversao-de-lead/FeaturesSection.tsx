@@ -2,6 +2,9 @@
 import React from 'react';
 import { MessageCircle, User, Check, Bot, BotMessageSquare } from "lucide-react";
 
+const superSacolas1 = '/images/super-sacolas-1.jpeg';
+const superSacolas2 = '/images/super-sacolas-2.jpeg';
+
 const features = [
   {
     icon: <BotMessageSquare className="w-8 h-8 text-green-500" />,
@@ -74,18 +77,18 @@ const FeaturesSection: React.FC = () => {
               ))}
             </ul>
           </div>
-          <div className="relative">
+          <div className="order-1 md:order-2">
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
                 <img
-                  src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31bdba762f3f3ad8556e3_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2014.46.39_d4f03553.jpg"
+                  src={superSacolas1}
                   alt="Screenshot 1"
                   className="w-full h-auto"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
                 <img
-                  src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31e292f83be437aed22d1_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2015.04.08_9af44b00.jpg"
+                  src={superSacolas2}
                   alt="Screenshot 2"
                   className="w-full h-auto"
                 />
