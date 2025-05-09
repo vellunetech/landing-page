@@ -3,24 +3,44 @@ import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 
+const tiagoImage = '/images/tiago.jpg';
+const herculesImage = '/images/hercules.jpeg';
+
+const Testimonial = ({ index, name, role, image, quote }: { index: number, name: string, role: string, image: string, quote: string }) => (
+  <Card key={index} className="bg-secondary border-0 shadow-md hover:shadow-lg transition-shadow">
+    <CardContent className="pt-6">
+      <div className="mb-4">
+        {[...Array(5)].map((_, i) => (
+          <span key={i} className="text-yellow-400">★</span>
+        ))}
+      </div>
+      <p className="mb-6 italic text-gray-600">{quote}</p>
+      <div className="flex items-center">
+        <Avatar className="h-10 w-10 mr-3">
+          <AvatarImage src={image} />
+          <AvatarFallback className="bg-brand-100 text-brand-800">{image}</AvatarFallback>
+        </Avatar>
+        <div>
+          <div className="font-semibold">{name}</div>
+          <div className="text-sm text-gray-500">{role}</div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+)
+
 const testimonials = [
   {
-    quote: "Desde que implementamos o Vellune, nossas taxas de conversão aumentaram em 250%. A plataforma é intuitiva e os resultados são impressionantes.",
-    author: "Carolina Silva",
-    role: "Marketing Director, TechBR",
-    avatar: "CS"
-  },
-  {
-    quote: "O sistema de captura inteligente da Vellune praticamente triplicou nossa base de leads qualificados. Não consigo imaginar nosso funil de vendas sem esta ferramenta.",
-    author: "Rodrigo Mendes",
-    role: "CEO, Inova Solutions",
-    avatar: "RM"
+    quote: "O Pedro (Engenheiro da Vellune) não só prestou um excelente serviço, entregando todo o combinado no prazo como em todas as reuniões demonstrou muita proatividade, trazendo ideias e novas soluções.",
+    author: "Hércules Florence",
+    role: "CEO no Minha Palavra",
+    image: herculesImage
   },
   {
     quote: "A segmentação automática de leads do Vellune economizou horas do nosso time de marketing e aumentou significativamente a eficácia das nossas campanhas.",
     author: "Fernanda Costa",
     role: "CMO, GrowthMax",
-    avatar: "FC"
+    image: "FC"
   }
 ];
 
@@ -37,29 +57,21 @@ const TestimonialsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-white border-0 shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400">★</span>
-                  ))}
-                </div>
-                <p className="mb-6 italic text-gray-600">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <Avatar className="h-10 w-10 mr-3">
-                    <AvatarImage src="" />
-                    <AvatarFallback className="bg-brand-100 text-brand-800">{testimonial.avatar}</AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <div className="font-semibold">{testimonial.author}</div>
-                    <div className="text-sm text-gray-500">{testimonial.role}</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="grid md:grid-cols-2 gap-8">
+          <Testimonial
+            index={0}
+            name="Hércules Florence"
+            role="CEO no Minha Palavra"
+            image={herculesImage}
+            quote="O Pedro (Engenheiro da Vellune) não só prestou um excelente serviço, entregando todo o combinado no prazo como em todas as reuniões demonstrou muita proatividade, trazendo ideias e novas soluções."
+          />
+          <Testimonial
+            index={1}
+            name="Tiago Alves"
+            role="CEO da Super Sacolas"
+            image={tiagoImage}
+            quote="Olá, gostaria de agradecer ao Pedro e a Vellune pelo excelente trabalho prestado com o chatbot de atendimento. Facilitou muito minha vida economizado muito na minha empresa e no meu tempo do dia a dia. Vellune, vocês são show!!!"
+          />
         </div>
 
       </div>

@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600">
-              A Vellune transforma seu tráfego web em oportunidades reais de negócio com chatbots inteligentes para WhatsApp.
+              A Vellune transforma seu tráfego web em oportunidades reais de negócio com chatbots inteligentes feitos sob medida para o WhatsApp.
               Capture, qualifique e converta mais leads com atendimento automatizado 24/7.
             </p>
 
