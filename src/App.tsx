@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Cases from "./pages/Cases";
 import IndexConversao from "./pages/conversao-de-lead/Index";
-import ContactConversao from "./pages/conversao-de-lead/Contact";
 import NotFound from "./pages/NotFound";
 
 // Add Google Fonts
@@ -29,7 +28,6 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/cases" element={<Cases />} />
           <Route path="/conversao-de-lead" element={<IndexConversao />} />
-          <Route path="/conversao-de-lead/contact" element={<ContactConversao />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

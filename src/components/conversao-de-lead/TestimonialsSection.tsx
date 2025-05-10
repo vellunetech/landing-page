@@ -29,21 +29,6 @@ const Testimonial = ({ index, name, role, image, quote }: { index: number, name:
   </Card>
 )
 
-const testimonials = [
-  {
-    quote: "O Pedro (Engenheiro da Vellune) não só prestou um excelente serviço, entregando todo o combinado no prazo como em todas as reuniões demonstrou muita proatividade, trazendo ideias e novas soluções.",
-    author: "Hércules Florence",
-    role: "CEO no Minha Palavra",
-    image: herculesImage
-  },
-  {
-    quote: "A segmentação automática de leads do Vellune economizou horas do nosso time de marketing e aumentou significativamente a eficácia das nossas campanhas.",
-    author: "Fernanda Costa",
-    role: "CMO, GrowthMax",
-    image: "FC"
-  }
-];
-
 const TestimonialsSection: React.FC = () => {
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-b from-white to-blue-50">

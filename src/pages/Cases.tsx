@@ -37,7 +37,7 @@ const Cases = () => {
     <div className="min-h-screen flex flex-col">
       <div className="bg-hero-pattern bg-fixed">
         <Navbar />
-        
+
         {/* Hero Section */}
         <section className="py-20">
           <div className="container">
@@ -60,45 +60,45 @@ const Cases = () => {
               Nossos clientes confiam em nós.
             </p>
           </div>
-          
+
           <div className="max-w-6xl mx-auto">
             {/* First Case */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-24">
               <div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
-                    <img 
-                      src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31bdba762f3f3ad8556e3_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2014.46.39_d4f03553.jpg" 
-                      alt="Screenshot 1" 
+                    <img
+                      src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31bdba762f3f3ad8556e3_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2014.46.39_d4f03553.jpg"
+                      alt="Screenshot 1"
                       className="w-full h-auto"
                     />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
-                    <img 
-                      src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31e292f83be437aed22d1_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2015.04.08_9af44b00.jpg" 
-                      alt="Screenshot 2" 
+                    <img
+                      src="https://cdn.prod.website-files.com/673bd90593bb54c7c6ab18c9/67d31e292f83be437aed22d1_Imagem%20do%20WhatsApp%20de%202025-03-13%20%C3%A0(s)%2015.04.08_9af44b00.jpg"
+                      alt="Screenshot 2"
                       className="w-full h-auto"
                     />
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex flex-col justify-center">
                 <h3 className="text-2xl font-bold mb-4">Minha Palavra</h3>
                 <p className="text-lg mb-6">
                   A maneira mais fácil e rápida de gerar contratos personalizados: envie sua solicitação pelo WhatsApp e receba um documento feito sob medida para você!
                 </p>
-                
-                <Testimonial 
-                  index={0} 
-                  name="Hércules Florence" 
-                  role="CEO no Minha Palavra" 
-                  image={herculesImage} 
+
+                <Testimonial
+                  index={0}
+                  name="Hércules Florence"
+                  role="CEO no Minha Palavra"
+                  image={herculesImage}
                   quote="O Pedro (Engenheiro da Vellune) não só prestou um excelente serviço, entregando todo o combinado no prazo como em todas as reuniões demonstrou muita proatividade, trazendo ideias e novas soluções."
                 />
               </div>
             </div>
-            
+
             {/* Second Case */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="flex flex-col justify-center order-2 md:order-1">
@@ -106,29 +106,29 @@ const Cases = () => {
                 <p className="text-lg mb-6">
                   Atendente digital que apresenta produtos com imagens e vídeos, filtrando apenas leads qualificados para o atendimento humano. Proporciona mais agilidade e aumento nas conversões, otimizando investimentos em tráfego pago ao focar em clientes com real interesse de compra.
                 </p>
-                
-                <Testimonial 
-                  index={1} 
-                  name="Tiago Alves" 
-                  role="CEO da Super Sacolas" 
-                  image={tiagoImage} 
+
+                <Testimonial
+                  index={1}
+                  name="Tiago Alves"
+                  role="CEO da Super Sacolas"
+                  image={tiagoImage}
                   quote="Olá, gostaria de agradecer ao Pedro e a Vellune pelo excelente trabalho prestado com o chatbot de atendimento. Facilitou muito minha vida economizado muito na minha empresa e no meu tempo do dia a dia. Vellune, vocês são show!!!"
                 />
               </div>
-              
+
               <div className="order-1 md:order-2">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
-                    <img 
-                      src={superSacolas1} 
-                      alt="Screenshot 1" 
+                    <img
+                      src={superSacolas1}
+                      alt="Screenshot 1"
                       className="w-full h-auto"
                     />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl animate-float">
-                    <img 
-                      src={superSacolas2} 
-                      alt="Screenshot 2" 
+                    <img
+                      src={superSacolas2}
+                      alt="Screenshot 2"
                       className="w-full h-auto"
                     />
                   </div>

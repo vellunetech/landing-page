@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '@/components/conversao-de-lead/Navbar';
+import Navbar from '@/components/navbar';
 import HeroSection from '@/components/conversao-de-lead/HeroSection';
 import FeaturesSection from '@/components/conversao-de-lead/FeaturesSection';
 import TestimonialsSection from '@/components/conversao-de-lead/TestimonialsSection';
